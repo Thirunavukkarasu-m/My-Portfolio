@@ -6,5 +6,5 @@ It is a responsive frontend project that showcases my skills, projects, and cont
 ---
 
 ##  Live Demo
-🔧 Coming Soon (Deployment in progress)
+🔧 https://thirunavukkarasu-m.github.io/My-Portfolio/
 
