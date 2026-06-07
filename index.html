@@ -1,1195 +1,865 @@
 <!doctype html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thirunavukkarasu M — Frontend Developer</title>
 
-    <!-- google font style -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thirunavukkarasu M — Frontend Developer</title>
 
-    <!-- Boostrp -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+  <!-- google font style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+    rel="stylesheet" />
 
-    <!-- Font awesome cdn -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- external css -->
-    <link rel="stylesheet" type="text/css" href="./index.css" />
-  </head>
+  <!-- Boostrp -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-design">
-      <div class="container">
-        <a class="navbar-brand nav-1" href="#home">
-          <span class="dot"></span>
-          Thiru<span class="dot-small">.</span>
-        </a>
+  <!-- Font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- external css -->
+  <link rel="stylesheet" type="text/css" href="./index.css" />
+</head>
 
-        <button
-          class="navbar-toggler border-0"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-design">
+    <div class="container">
+      <a class="navbar-brand nav-1" href="#home">
+        <span class="dot"></span>
+        Thiru<span class="dot-small">.</span>
+      </a>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto align-items-center text-center gap-1">
-            <li class="nav-item">
-              <a href="#home" class="nav-link nav-item-link">Home</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center text-center gap-1">
+          <li class="nav-item">
+            <a href="#home" class="nav-link nav-item-link">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#about" class="nav-link nav-item-link">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#skills" class="nav-link nav-item-link">Skills</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#projects" class="nav-link nav-item-link">Projects</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#education" class="nav-link nav-item-link">Education</a>
+          </li>
+
+          <li class="nav-item">
+            <button id="theme-toggle" class="theme-btn">
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
+          <div></div>
+
+          <li class="nav-item">
+            <a href="#contact" class="nav-contact-btn  ms-lg-2"> Contact </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home -->
+  <section id="home" class="home1-section">
+    <div class="home-color home-color--1"></div>
+    <div class="home-color home-color--2"></div>
+    <div class="container">
+      <div class="row align-items-center gy-5 gy-lg-0">
+        <div class="col-12 col-lg-6 text-white text-center text-lg-start animation-left">
+          <div class="home-badge mb-3">
+            <span class="home-badge-dot"></span>Available for hire
+          </div>
+          <h5 class="hello mb-1">Hello 👋</h5>
+          <h1 class="my-name mb-2">
+            Thirunavukkarasu <span style="color: var(--color-1)">M</span>
+          </h1>
+          <h3 class="my-role mb-3">Frontend Developer</h3>
+          <p class="my-des mx-auto mx-lg-0">
+            Building high-performance, responsive web apps with clean code and
+            modern UI.
+          </p>
+          <div class="mt-4 d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+            <a href="#hire-modal-anchor" class="home-btn"><i class="fas fa-paper-plane me-2"></i>Hire Me</a>
+            <a href="./pdf/THIRUNAVUKKARASU M - Resume.pdf" target="_blank" download class="home-btn-outline"><i
+                class="fas fa-download me-2"></i>Resume</a>
+          </div>
+          <div class="home-stats mt-5 d-flex gap-4 justify-content-center justify-content-lg-start flex-wrap">
+            <div class="home-stat">
+              <span class="home-stat-num">15+</span><span class="home-stat-label">Certifications</span>
+            </div>
+            <div class="home-stat-divider"></div>
+            <div class="home-stat">
+              <span class="home-stat-num">6+</span><span class="home-stat-label">Skills</span>
+            </div>
+            <div class="home-stat-divider"></div>
+            <div class="home-stat">
+              <span class="home-stat-num">2026</span><span class="home-stat-label">Graduate</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 text-center anim-fade-right">
+          <div class="home-img">
+            <div class="home-img-ring"></div>
+            <div class="home-img-ring home-img-ring--2"></div>
+            <img src="./assests/profile.jpeg" class="home-profile-img" alt="Thirunavukkarasu M" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT --->
+  <section id="about" class="about-section text-white">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-tag">WHO I AM</span>
+        <h2 class="section-title">ABOUT</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6 animation-left">
+          <div class="about-visual">
+            <!-- 3D Cube -->
+            <div class="about-cube">
+              <div class="about-cube">
+                <!-- FRONT -->
+                <div class="about-face about-face--front">
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                </div>
+                <!-- BACK -->
+                <div class="about-face about-face--back">
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                </div>
+                <!-- LEFT -->
+                <div class="about-face about-face--left">
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                </div>
+                <!-- RIGHT -->
+                <div class="about-face about-face--right">
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                </div>
+                <!-- TOP -->
+                <div class="about-face about-face--top">
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                </div>
+                <!-- BOTTOM -->
+                <div class="about-face about-face--bottom">
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                  <div class="about-side"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT:  -->
+        <div class="col-12 col-md-6 anim-fade-right">
+          <div class="about-glass-card">
+            <div class="about-card-tag">Frontend Architecture</div>
+            <h3 class="about-heading">Engineering Interactive Experiences</h3>
+            <p>
+              I am a Computer Science Engineering student specializing in
+              modern frontend architecture and scalable UI systems. My
+              expertise lies in crafting high-performance, responsive
+              interfaces using HTML, CSS, Bootstrap, JavaScript, and ReactJS.
+            </p>
+            <p>
+              I focus on component-driven design, clean code principles, and
+              optimized rendering techniques to deliver seamless user
+              experiences. With strong analytical thinking and problem-solving
+              skills, I build applications that balance aesthetics, usability,
+              and performance.
+            </p>
+            <div class="about-skils mt-4">
+              <span class="about-skil">HTML/CSS</span>
+              <span class="about-skil">Bootstrap</span>
+              <span class="about-skil">JavaScript</span>
+              <span class="about-skil">ReactJS</span>
+              <span class="about-skil">MySQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skill -->
+  <section id="skills" class="skills-section text-white py-5">
+    <div class="container text-center">
+      <div class="section-heading">
+        <span class="section-tag">WHAT I KNOW</span>
+        <h2 class="section-title">Skills</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="row g-4 g-lg-5 justify-content-center">
+        <div class="col-12 col-sm-6 col-lg-4" style="animation-delay: 0.05s">
+          <div class="skil-card">
+            <div class="skill-number">1</div>
+            <div class="skill-card">
+              <div class="skill-corner"></div>
+
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="skill-logo"
+                alt="HTML5" /><span class="skil-btn"><i class="fa-solid fa-circle-nodes"></i> HTML</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4" style="animation-delay: 0.1s">
+          <div class="skil-card">
+            <div class="skill-number">2</div>
+            <div class="skill-card" style="--glow-color: #264de4">
+              <div class="skill-corner"></div>
+              <div class="skill-card-glow"></div>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="skill-logo"
+                alt="CSS3" /><span class="skil-btn"><i class="fa-solid fa-circle-nodes"></i> CSS</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4" style="animation-delay: 0.15s">
+          <div class="skil-card">
+            <div class="skill-number">3</div>
+            <div class="skill-card" style="--glow-color: #7952b3">
+              <div class="skill-corner"></div>
+              <div class="skill-card-glow"></div>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                class="skill-logo" alt="Bootstrap" /><span class="skil-btn"><i class="fa-solid fa-circle-nodes"></i>
+                BOOTSTRAP</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4" style="animation-delay: 0.2s">
+          <div class="skil-card">
+            <div class="skill-number">4</div>
+            <div class="skill-card" style="--glow-color: #f7df1e">
+              <div class="skill-corner"></div>
+              <div class="skill-card-glow"></div>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                class="skill-logo" alt="JavaScript" /><span class="skil-btn"><i class="fa-solid fa-circle-nodes"></i>
+                JAVASCRIPT</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4" style="animation-delay: 0.25s">
+          <div class="skil-card">
+            <div class="skill-number">5</div>
+            <div class="skill-card" style="--glow-color: #61dafb">
+              <div class="skill-corner"></div>
+              <div class="skill-card-glow"></div>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" class="skill-logo"
+                alt="React JS" /><span class="skil-btn"><i class="fa-solid fa-circle-nodes"></i> REACT JS</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4" style="animation-delay: 0.3s">
+          <div class="skil-card">
+            <div class="skill-number">6</div>
+            <div class="skill-card" style="--glow-color: #00758f">
+              <div class="skill-corner"></div>
+              <div class="skill-card-glow"></div>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="skill-logo"
+                alt="MySQL" /><span class="skil-btn"><i class="fa-solid fa-circle-nodes"></i> MYSQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools -->
+  <section id="tools" class="tools-section text-white py-5">
+    <div class="container text-center">
+      <div class="section-heading">
+        <span class="section-tag">MY SETUP</span>
+        <h2 class="section-title">Tools</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="row g-4 g-lg-5 justify-content-center">
+        <div class="col-12 col-sm-6 col-lg-4" style="animation-delay: 0.05s">
+          <div class="skil-card">
+            <div class="skill-number">7</div>
+            <div class="skill-card" style="--glow-color: #007acc">
+              <div class="skill-corner"></div>
+              <div class="skill-card-glow"></div>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                class="skill-logo" alt="VS Code" /><span class="skil-btn"><i class="fa-solid fa-circle-nodes"></i> VS
+                CODE</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4" style="animation-delay: 0.1s">
+          <div class="skil-card">
+            <div class="skill-number">8</div>
+            <div class="skill-card" style="--glow-color: #e0e0e0">
+              <div class="skill-corner"></div>
+              <div class="skill-card-glow"></div>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                class="skill-logo skill-logo--invert" alt="GitHub" /><span class="skil-btn"><i
+                  class="fa-solid fa-circle-nodes"></i> GITHUB</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects-section text-white py-5">
+    <div class="container">
+      <div class="section-heading text-center">
+        <span class="section-tag">WHAT I'VE BUILT</span>
+        <h2 class="section-title">Projects</h2>
+        <div class="section-line mx-auto"></div>
+      </div>
+      <div class="row align-items-center g-4 g-lg-5" style="animation-delay: 0.1s">
+        <div class="col-12 col-md-5 d-flex justify-content-center">
+          <div class="project-card">
+            <div class="project-visual-bg"></div>
+            <div class="project-visual-label">
+              <i class="fas fa-car me-2"></i>Parking Slot Finder
+            </div>
+            <div class="project-badge">Live</div>
+          </div>
+        </div>
+        <div class="col-12 col-md-7">
+          <div class="project-info-card">
+            <div class="project-number">01</div>
+            <h5 class="project-title">Smart Parking Slot Finder</h5>
+            <p class="project-desc">
+              A real-time smart web application designed to help users find
+              available parking slots instantly. Reduces time spent searching
+              for parking with a smooth, intuitive experience.
+            </p>
+            <p class="project-desc">
+              Built with <span class="project-tech-tag">HTML</span>
+              <span class="project-tech-tag">CSS</span>
+              <span class="project-tech-tag">Bootstrap</span> with focus on
+              responsive design and efficient slot management.
+            </p>
+            <a href="https://thirunavukkarasu-m.github.io/car-slot-finder/" target="_blank" class="project-link-btn"><i
+                class="fas fa-external-link-alt me-2"></i>View Project</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-5 d-flex justify-content-center">
+          <div class="project-card">
+            <div class="project-visual-bg"></div>
+            <div class="project-visual-label">
+              <i class="fas fa-leaf me-2"></i>Uzhavan Hub
+            </div>
+            <div class="project-badge">UI Only</div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-7">
+          <div class="project-info-card">
+            <div class="project-number">02</div>
+
+            <h5 class="project-title">Uzhavan Hub - Farmer Data UI</h5>
+
+            <p class="project-desc">
+              A simple agricultural UI dashboard designed to display farmer-related data
+              such as crops, basic weather updates, and market information in a clean and
+              user-friendly interface.
+            </p>
+
+            <p class="project-desc">
+              Built with <span class="project-tech-tag">HTML</span>
+              <span class="project-tech-tag">CSS</span>
+              <span class="project-tech-tag">Bootstrap</span> with a focus on responsive
+              layout and clean UI design for agricultural use case.
+            </p>
+
+            <a href="https://uzhavan-hub.netlify.app" target="_blank" class="project-link-btn">
+              <i class="fas fa-external-link-alt me-2"></i>View Project
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Education  --->
+  <section id="education" class="education-section text-white py-5">
+    <div class="container text-center">
+      <div class="section-heading">
+        <span class="section-tag">MY JOURNEY</span>
+        <h2 class="section-title">Education</h2>
+        <div class="section-line mx-auto"></div>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-12 col-md-6 col-lg-4" style="animation-delay: 0.05s">
+          <div class="edu-card">
+            <div class="edu-circle">
+              <svg viewBox="0 0 160 160">
+                <circle cx="80" cy="80" r="60" class="edu-circle-bg"></circle>
+                <circle cx="80" cy="80" r="60" class="edu-circle-progress p71"></circle>
+              </svg>
+              <div class="edu-percent">71%</div>
+            </div>
+            <div class="edu-badge">SSLC</div>
+            <h5 class="edu-label mt-2">10th Standard</h5>
+            <p class="text-secondary small mb-1">
+              Govt High School — Korakkottai
+            </p>
+            <small class="edu-year">2019 - 2020</small>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4" style="animation-delay: 0.1s">
+          <div class="edu-card">
+            <div class="edu-circle">
+              <svg viewBox="0 0 160 160">
+                <circle cx="80" cy="80" r="60" class="edu-circle-bg"></circle>
+                <circle cx="80" cy="80" r="60" class="edu-circle-progress p72"></circle>
+              </svg>
+              <div class="edu-percent">72%</div>
+            </div>
+            <div class="edu-badge">HSC</div>
+            <h5 class="edu-label mt-2">12th Standard</h5>
+            <p class="text-secondary small mb-1">
+              Govt Hr Sec School — GunnagamPoondi
+            </p>
+            <small class="edu-year">2020 - 2022</small>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4" style="animation-delay: 0.15s">
+          <div class="edu-card edu-card--featured">
+            <div class="edu-circle">
+              <svg viewBox="0 0 160 160">
+                <circle cx="80" cy="80" r="60" class="edu-circle-bg"></circle>
+                <circle cx="80" cy="80" r="60" class="edu-circle-progress p72"></circle>
+              </svg>
+              <div class="edu-percent">7.2</div>
+            </div>
+            <div class="edu-badge edu-badge--color-1">B.E CSE</div>
+            <h5 class="edu-label mt-2">Computer Science</h5>
+            <p class="text-secondary small mb-1">
+              St Peter's College of Engg &amp; Tech, Avadi
+            </p>
+            <small class="edu-year">2022 - 2026</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications --->
+  <section id="certifications" class="cert-section py-5 text-white">
+    <div class="container">
+      <div class="section-heading text-center">
+        <span class="section-tag">CREDENTIALS</span>
+        <h2 class="section-title">Certifications</h2>
+        <div class="section-line mx-auto"></div>
+      </div>
+      <div class="cert-cards">
+        <div class="cert-fade cert-fade--left"></div>
+        <div class="cert-fade cert-fade--right"></div>
+        <div class="cert-track">
+          <div class="cert-card">
+            <img src="./assests/2.png" alt="Cert 1" />
+            <div class="cert-card-body">
+              <h6>Certificate 1</h6>
+              <div class="btn-group w-100">
+                <a href="./pdf/Aicte (2).pdf" target="_blank" class="btn btn-outline-light btn-sm">View</a><a
+                  href="./pdf/Aicte (2).pdf" download class="btn btn-info btn-sm">Download</a>
+              </div>
+            </div>
+          </div>
+          <div class="cert-card">
+            <img src="./assests/5.png" alt="Cert 2" />
+            <div class="cert-card-body">
+              <h6>Certificate 2</h6>
+              <div class="btn-group w-100">
+                <a href="./pdf/forage certificate.pdf" target="_blank" class="btn btn-outline-light btn-sm">View</a><a
+                  href="./pdf/forage certificate.pdf" download class="btn btn-info btn-sm">Download</a>
+              </div>
+            </div>
+          </div>
+          <div class="cert-card">
+            <img src="./assests/3.png" alt="Cert 3" />
+            <div class="cert-card-body">
+              <h6>Certificate 3</h6>
+              <div class="btn-group w-100">
+                <a href="./pdf/aws.pdf" target="_blank" class="btn btn-outline-light btn-sm">View</a><a
+                  href="./pdf/aws.pdf" download class="btn btn-info btn-sm">Download</a>
+              </div>
+            </div>
+          </div>
+          <div class="cert-card">
+            <img src="./assests/1.png" alt="Cert 4" />
+            <div class="cert-card-body">
+              <h6>Certificate 4</h6>
+              <div class="btn-group w-100">
+                <a href="./pdf/Recent intern online.pdf" target="_blank" class="btn btn-outline-light btn-sm">View</a><a
+                  href="./pdf/Recent intern online.pdf" download class="btn btn-info btn-sm">Download</a>
+              </div>
+            </div>
+          </div>
+          <div class="cert-card">
+            <img src="./assests/4.png" alt="Cert 5" />
+            <div class="cert-card-body">
+              <h6>Certificate 5</h6>
+              <div class="btn-group w-100">
+                <a href="./pdf/data analyst.pdf" target="_blank" class="btn btn-outline-light btn-sm">View</a><a
+                  href="./pdf/data analyst.pdf" download class="btn btn-info btn-sm">Download</a>
+              </div>
+            </div>
+          </div>
+          <div class="cert-card">
+            <img src="./assests/6.png" alt="Cert 6" />
+            <div class="cert-card-body">
+              <h6>Certificate 6</h6>
+              <div class="btn-group w-100">
+                <a href="./pdf/6.pdf" target="_blank" class="btn btn-outline-light btn-sm">View</a><a href="./pdf/6.pdf"
+                  download class="btn btn-info btn-sm">Download</a>
+              </div>
+            </div>
+          </div>
+          <div class="cert-card">
+            <img src="./assests/7.png" alt="Cert 7" />
+            <div class="cert-card-body">
+              <h6>Certificate 7</h6>
+              <div class="btn-group w-100">
+                <a href="./pdf/7.pdf" target="_blank" class="btn btn-outline-light btn-sm">View</a><a href="./pdf/7.pdf"
+                  download class="btn btn-info btn-sm">Download</a>
+              </div>
+            </div>
+          </div>
+          <div class="cert-card">
+            <img src="./assests/8.png" alt="Cert 8" />
+            <div class="cert-card-body">
+              <h6>Certificate 8</h6>
+              <div class="btn-group w-100">
+                <a href="./pdf/8.pdf" target="_blank" class="btn btn-outline-light btn-sm">View</a><a href="./pdf/8.pdf"
+                  download class="btn btn-info btn-sm">Download</a>
+              </div>
+            </div>
+          </div>
+          <div class="cert-card">
+            <img src="./assests/9.png" alt="Cert 9" />
+            <div class="cert-card-body">
+              <h6>Certificate 9</h6>
+              <div class="btn-group w-100">
+                <a href="./pdf/9.pdf" target="_blank" class="btn btn-outline-light btn-sm">View</a><a href="./pdf/9.pdf"
+                  download class="btn btn-info btn-sm">Download</a>
+              </div>
+            </div>
+          </div>
+          <div class="cert-card">
+            <img src="./assests/10.png" alt="Cert 10" />
+            <div class="cert-card-body">
+              <h6>Certificate 10</h6>
+              <div class="btn-group w-100">
+                <a href="./assests/10.png" target="_blank" class="btn btn-outline-light btn-sm">View</a><a
+                  href="./assests/10.png" download class="btn btn-info btn-sm">Download</a>
+              </div>
+            </div>
+          </div>
+          <div class="cert-card">
+            <img src="./assests/11.png" alt="Cert 11" />
+            <div class="cert-card-body">
+              <h6>Certificate 11</h6>
+              <div class="btn-group w-100">
+                <a href="./assests/11.png" target="_blank" class="btn btn-outline-light btn-sm">View</a><a
+                  href="./assests/11.png" download class="btn btn-info btn-sm">Download</a>
+              </div>
+            </div>
+          </div>
+          <div class="cert-card">
+            <img src="./assests/12.png" alt="Cert 12" />
+            <div class="cert-card-body">
+              <h6>Certificate 12</h6>
+              <div class="btn-group w-100">
+                <a href="./assests/12.png" target="_blank" class="btn btn-outline-light btn-sm">View</a><a
+                  href="./assests/12.png" download class="btn btn-info btn-sm">Download</a>
+              </div>
+            </div>
+          </div>
+          <div class="cert-card">
+            <img src="./assests/13.png" alt="Cert 13" />
+            <div class="cert-card-body">
+              <h6>Certificate 13</h6>
+              <div class="btn-group w-100">
+                <a href="./assests/13.png" target="_blank" class="btn btn-outline-light btn-sm">View</a><a
+                  href="./assests/13.png" download class="btn btn-info btn-sm">Download</a>
+              </div>
+            </div>
+          </div>
+          <div class="cert-card">
+            <img src="./assests/14.png" alt="Cert 14" />
+            <div class="cert-card-body">
+              <h6>Certificate 14</h6>
+              <div class="btn-group w-100">
+                <a href="./assests/14.png" target="_blank" class="btn btn-outline-light btn-sm">View</a><a
+                  href="./assests/14.png" download class="btn btn-info btn-sm">Download</a>
+              </div>
+            </div>
+          </div>
+          <div class="cert-card">
+            <img src="./assests/15.png" alt="Cert 15" />
+            <div class="cert-card-body">
+              <h6>Certificate 15</h6>
+              <div class="btn-group w-100">
+                <a href="./assests/15.png" target="_blank" class="btn btn-outline-light btn-sm">View</a><a
+                  href="./assests/15.png" download class="btn btn-info btn-sm">Download</a>
+              </div>
+            </div>
+          </div>
+          <div class="cert-card">
+            <img src="./assests/2.png" alt="Cert 1" />
+            <div class="cert-card-body">
+              <h6>Certificate 1</h6>
+              <div class="btn-group w-100">
+                <a href="./pdf/Aicte (2).pdf" target="_blank" class="btn btn-outline-light btn-sm">View</a><a
+                  href="./pdf/Aicte (2).pdf" download class="btn btn-info btn-sm">Download</a>
+              </div>
+            </div>
+          </div>
+          <div class="cert-card">
+            <img src="./assests/5.png" alt="Cert 2" />
+            <div class="cert-card-body">
+              <h6>Certificate 2</h6>
+              <div class="btn-group w-100">
+                <a href="./pdf/forage certificate.pdf" target="_blank" class="btn btn-outline-light btn-sm">View</a><a
+                  href="./pdf/forage certificate.pdf" download class="btn btn-info btn-sm">Download</a>
+              </div>
+            </div>
+          </div>
+          <div class="cert-card">
+            <img src="./assests/3.png" alt="Cert 3" />
+            <div class="cert-card-body">
+              <h6>Certificate 3</h6>
+              <div class="btn-group w-100">
+                <a href="./pdf/aws.pdf" target="_blank" class="btn btn-outline-light btn-sm">View</a><a
+                  href="./pdf/aws.pdf" download class="btn btn-info btn-sm">Download</a>
+              </div>
+            </div>
+          </div>
+          <div class="cert-card">
+            <img src="./assests/4.png" alt="Cert 5" />
+            <div class="cert-card-body">
+              <h6>Certificate 5</h6>
+              <div class="btn-group w-100">
+                <a href="./pdf/data analyst.pdf" target="_blank" class="btn btn-outline-light btn-sm">View</a><a
+                  href="./pdf/data analyst.pdf" download class="btn btn-info btn-sm">Download</a>
+              </div>
+            </div>
+          </div>
+          <div class="cert-card">
+            <img src="./assests/6.png" alt="Cert 6" />
+            <div class="cert-card-body">
+              <h6>Certificate 6</h6>
+              <div class="btn-group w-100">
+                <a href="./pdf/6.pdf" target="_blank" class="btn btn-outline-light btn-sm">View</a><a href="./pdf/6.pdf"
+                  download class="btn btn-info btn-sm">Download</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact --->
+  <section id="contact" class="contact-section text-white">
+    <div class="container">
+      <div class="section-heading text-center">
+        <span class="section-tag">LET'S TALK</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="section-line mx-auto"></div>
+      </div>
+      <div class="row g-3 justify-content-center" style="animation-delay: 0.1s">
+        <div class="col-6 col-md-4 d-flex justify-content-center">
+          <a href="https://www.linkedin.com/in/thirunavukkarasu12/" target="_blank"
+            class="contact-card contact-card--linkedin"><i class="fab fa-linkedin-in"></i><span>LinkedIn</span></a>
+        </div>
+        <div class="col-6 col-md-4 d-flex justify-content-center">
+          <a href="https://github.com/Thirunavukkarasu-m?tab=repositories" target="_blank"
+            class="contact-card contact-card--github"><i class="fab fa-github"></i><span>GitHub</span></a>
+        </div>
+        <div class="col-6 col-md-4 d-flex justify-content-center">
+          <a href="mailto:thirudev946@gmail.com" class="contact-card contact-card--email"><i
+              class="fas fa-envelope"></i><span>Email</span></a>
+        </div>
+        <div class="col-6 col-md-4 d-flex justify-content-center">
+          <a href="https://www.instagram.com/_thiru_cruise/" target="_blank"
+            class="contact-card contact-card--instagram"><i class="fab fa-instagram"></i><span>Instagram</span></a>
+        </div>
+        <div class="col-6 col-md-4 d-flex justify-content-center">
+          <a href="#" class="contact-card contact-card--telegram"><i
+              class="fab fa-telegram-plane"></i><span>Telegram</span></a>
+        </div>
+        <div class="col-6 col-md-4 d-flex justify-content-center">
+          <a href="https://web.whatsapp.com/" target="_blank" class="contact-card contact-card--whatsapp"><i
+              class="fab fa-whatsapp"></i><span>WhatsApp</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer --->
+  <footer class="footer-section text-white">
+    <div class="container">
+      <div class="row gy-5 text-center text-md-start">
+        <div class="col-12 col-md-4">
+          <h4 class="footer-brand">Thiru<span>.</span></h4>
+          <p class="footer-desc">
+            Frontend Developer crafting responsive, modern web experiences
+            with clean code and pixel-perfect UI.
+          </p>
+          <p class="footer-location">
+            <i class="fas fa-map-marker-alt me-2"></i>Velachery, Chennai
+          </p>
+          <div class="footer-socials mt-4 d-flex gap-2 justify-content-center justify-content-md-start">
+            <a href="https://www.linkedin.com/in/thirunavukkarasu12/" target="_blank" class="footer-social-btn"
+              title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Thirunavukkarasu-m?tab=repositories" target="_blank" class="footer-social-btn"
+              title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/_thiru_cruise/" target="_blank" class="footer-social-btn"
+              title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:thirudev946@gmail.com" class="footer-social-btn" title="Email"><i
+                class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-md-4">
+          <h6 class="footer-heading">Quick Links</h6>
+          <ul class="list-unstyled footer-nav">
+            <li>
+              <a href="#home"><i class="fas fa-chevron-right me-1"></i>Home</a>
             </li>
-
-            <li class="nav-item">
-              <a href="#about" class="nav-link nav-item-link">About</a>
+            <li>
+              <a href="#about"><i class="fas fa-chevron-right me-1"></i>About</a>
             </li>
-
-            <li class="nav-item">
-              <a href="#skills" class="nav-link nav-item-link">Skills</a>
+            <li>
+              <a href="#skills"><i class="fas fa-chevron-right me-1"></i>Skills</a>
             </li>
-
-            <li class="nav-item">
-              <a href="#projects" class="nav-link nav-item-link">Projects</a>
+            <li>
+              <a href="#projects"><i class="fas fa-chevron-right me-1"></i>Projects</a>
             </li>
-
-            <li class="nav-item">
-              <a href="#education" class="nav-link nav-item-link">Education</a>
-            </li>
-
-            <li class="nav-item">
-              <a href="#contact" class="nav-contact-btn ms-lg-2"> Contact </a>
+            <li>
+              <a href="#certifications"><i class="fas fa-chevron-right me-1"></i>Certifications</a>
             </li>
           </ul>
         </div>
-      </div>
-    </nav>
-
-    <!-- Home -->
-    <section id="home" class="home1-section">
-      <div class="home-color home-color--1"></div>
-      <div class="home-color home-color--2"></div>
-      <div class="container">
-        <div class="row align-items-center gy-5 gy-lg-0">
-          <div
-            class="col-12 col-lg-6 text-white text-center text-lg-start animation-left"
-          >
-            <div class="home-badge mb-3">
-              <span class="home-badge-dot"></span>Available for hire
-            </div>
-            <h5 class="hello mb-1">Hello 👋</h5>
-            <h1 class="my-name mb-2">
-              Thirunavukkarasu <span style="color: var(--color-1)">M</span>
-            </h1>
-            <h3 class="my-role mb-3">Frontend Developer</h3>
-            <p class="my-des mx-auto mx-lg-0">
-              Building high-performance, responsive web apps with clean code and
-              modern UI.
-            </p>
-            <div
-              class="mt-4 d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start"
-            >
-              <a href="#hire-modal-anchor" class="home-btn"
-                ><i class="fas fa-paper-plane me-2"></i>Hire Me</a
-              >
-              <a
-                href="./pdf/THIRUNAVUKKARASU M - Resume.pdf"
-                target="_blank"
-                download
-                class="home-btn-outline"
-                ><i class="fas fa-download me-2"></i>Resume</a
-              >
-            </div>
-            <div
-              class="home-stats mt-5 d-flex gap-4 justify-content-center justify-content-lg-start flex-wrap"
-            >
-              <div class="home-stat">
-                <span class="home-stat-num">15+</span
-                ><span class="home-stat-label">Certifications</span>
-              </div>
-              <div class="home-stat-divider"></div>
-              <div class="home-stat">
-                <span class="home-stat-num">6+</span
-                ><span class="home-stat-label">Skills</span>
-              </div>
-              <div class="home-stat-divider"></div>
-              <div class="home-stat">
-                <span class="home-stat-num">2026</span
-                ><span class="home-stat-label">Graduate</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-6 text-center anim-fade-right">
-            <div class="home-img">
-              <div class="home-img-ring"></div>
-              <div class="home-img-ring home-img-ring--2"></div>
-              <img
-                src="./assests/profile.jpeg"
-                class="home-profile-img"
-                alt="Thirunavukkarasu M"
-              />
+        <div class="col-6 col-md-4">
+          <h6 class="footer-heading">Contact</h6>
+          <div class="footer-contact-list">
+            <a href="mailto:thirudev946@gmail.com" class="footer-contact-item"><i
+                class="fas fa-envelope"></i><span>thirudev946@gmail.com</span></a>
+            <a href="tel:9790097802" class="footer-contact-item"><i class="fas fa-phone"></i><span>+91
+                9790097802</span></a>
+            <div class="footer-contact-item">
+              <i class="fas fa-map-marker-alt"></i><span>Chennai, Tamil Nadu</span>
             </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- ABOUT --->
-    <section id="about" class="about-section text-white">
-      <div class="container">
-        <div class="section-heading">
-          <span class="section-tag">WHO I AM</span>
-          <h2 class="section-title">ABOUT</h2>
-          <div class="section-line"></div>
-        </div>
-
-        <div class="row align-items-center">
-          <div class="col-12 col-md-6 animation-left">
-            <div class="about-visual">
-              <!-- 3D Cube -->
-              <div class="about-cube">
-                <div class="about-cube">
-                  <!-- FRONT -->
-                  <div class="about-face about-face--front">
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                  </div>
-                  <!-- BACK -->
-                  <div class="about-face about-face--back">
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                  </div>
-                  <!-- LEFT -->
-                  <div class="about-face about-face--left">
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                  </div>
-                  <!-- RIGHT -->
-                  <div class="about-face about-face--right">
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                  </div>
-                  <!-- TOP -->
-                  <div class="about-face about-face--top">
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                  </div>
-                  <!-- BOTTOM -->
-                  <div class="about-face about-face--bottom">
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                    <div class="about-side"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- RIGHT:  -->
-          <div class="col-12 col-md-6 anim-fade-right">
-            <div class="about-glass-card">
-              <div class="about-card-tag">Frontend Architecture</div>
-              <h3 class="about-heading">Engineering Interactive Experiences</h3>
-              <p>
-                I am a Computer Science Engineering student specializing in
-                modern frontend architecture and scalable UI systems. My
-                expertise lies in crafting high-performance, responsive
-                interfaces using HTML, CSS, Bootstrap, JavaScript, and ReactJS.
-              </p>
-              <p>
-                I focus on component-driven design, clean code principles, and
-                optimized rendering techniques to deliver seamless user
-                experiences. With strong analytical thinking and problem-solving
-                skills, I build applications that balance aesthetics, usability,
-                and performance.
-              </p>
-              <div class="about-skils mt-4">
-                <span class="about-skil">HTML/CSS</span>
-                <span class="about-skil">Bootstrap</span>
-                <span class="about-skil">JavaScript</span>
-                <span class="about-skil">ReactJS</span>
-                <span class="about-skil">MySQL</span>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom d-flex flex-column flex-sm-row align-items-center justify-content-between gap-2">
+        <span class="footer-copy">© 2026 Thirunavukkarasu M. All rights reserved.</span>
       </div>
-    </section>
-
-    <!-- Skill -->
-    <section id="skills" class="skills-section text-white py-5">
-      <div class="container text-center">
-        <div class="section-heading">
-          <span class="section-tag">WHAT I KNOW</span>
-          <h2 class="section-title">Skills</h2>
-          <div class="section-line"></div>
-        </div>
-        <div class="row g-4 g-lg-5 justify-content-center">
-          <div class="col-12 col-sm-6 col-lg-4" style="animation-delay: 0.05s">
-            <div class="skil-card">
-              <div class="skill-number">1</div>
-              <div class="skill-card">
-                <div class="skill-corner"></div>
-
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                  class="skill-logo"
-                  alt="HTML5"
-                /><span class="skil-btn"
-                  ><i class="fa-solid fa-circle-nodes"></i> HTML</span
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4" style="animation-delay: 0.1s">
-            <div class="skil-card">
-              <div class="skill-number">2</div>
-              <div class="skill-card" style="--glow-color: #264de4">
-                <div class="skill-corner"></div>
-                <div class="skill-card-glow"></div>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                  class="skill-logo"
-                  alt="CSS3"
-                /><span class="skil-btn"
-                  ><i class="fa-solid fa-circle-nodes"></i> CSS</span
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4" style="animation-delay: 0.15s">
-            <div class="skil-card">
-              <div class="skill-number">3</div>
-              <div class="skill-card" style="--glow-color: #7952b3">
-                <div class="skill-corner"></div>
-                <div class="skill-card-glow"></div>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
-                  class="skill-logo"
-                  alt="Bootstrap"
-                /><span class="skil-btn"
-                  ><i class="fa-solid fa-circle-nodes"></i> BOOTSTRAP</span
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4" style="animation-delay: 0.2s">
-            <div class="skil-card">
-              <div class="skill-number">4</div>
-              <div class="skill-card" style="--glow-color: #f7df1e">
-                <div class="skill-corner"></div>
-                <div class="skill-card-glow"></div>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                  class="skill-logo"
-                  alt="JavaScript"
-                /><span class="skil-btn"
-                  ><i class="fa-solid fa-circle-nodes"></i> JAVASCRIPT</span
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4" style="animation-delay: 0.25s">
-            <div class="skil-card">
-              <div class="skill-number">5</div>
-              <div class="skill-card" style="--glow-color: #61dafb">
-                <div class="skill-corner"></div>
-                <div class="skill-card-glow"></div>
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-                  class="skill-logo"
-                  alt="React JS"
-                /><span class="skil-btn"
-                  ><i class="fa-solid fa-circle-nodes"></i> REACT JS</span
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4" style="animation-delay: 0.3s">
-            <div class="skil-card">
-              <div class="skill-number">6</div>
-              <div class="skill-card" style="--glow-color: #00758f">
-                <div class="skill-corner"></div>
-                <div class="skill-card-glow"></div>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                  class="skill-logo"
-                  alt="MySQL"
-                /><span class="skil-btn"
-                  ><i class="fa-solid fa-circle-nodes"></i> MYSQL</span
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Tools -->
-    <section id="tools" class="tools-section text-white py-5">
-      <div class="container text-center">
-        <div class="section-heading">
-          <span class="section-tag">MY SETUP</span>
-          <h2 class="section-title">Tools</h2>
-          <div class="section-line"></div>
-        </div>
-        <div class="row g-4 g-lg-5 justify-content-center">
-          <div class="col-12 col-sm-6 col-lg-4" style="animation-delay: 0.05s">
-            <div class="skil-card">
-              <div class="skill-number">7</div>
-              <div class="skill-card" style="--glow-color: #007acc">
-                <div class="skill-corner"></div>
-                <div class="skill-card-glow"></div>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
-                  class="skill-logo"
-                  alt="VS Code"
-                /><span class="skil-btn"
-                  ><i class="fa-solid fa-circle-nodes"></i> VS CODE</span
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4" style="animation-delay: 0.1s">
-            <div class="skil-card">
-              <div class="skill-number">8</div>
-              <div class="skill-card" style="--glow-color: #e0e0e0">
-                <div class="skill-corner"></div>
-                <div class="skill-card-glow"></div>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                  class="skill-logo skill-logo--invert"
-                  alt="GitHub"
-                /><span class="skil-btn"
-                  ><i class="fa-solid fa-circle-nodes"></i> GITHUB</span
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="projects-section text-white py-5">
-      <div class="container">
-        <div class="section-heading text-center">
-          <span class="section-tag">WHAT I'VE BUILT</span>
-          <h2 class="section-title">Projects</h2>
-          <div class="section-line mx-auto"></div>
-        </div>
-        <div
-          class="row align-items-center g-4 g-lg-5"
-          style="animation-delay: 0.1s"
-        >
-          <div class="col-12 col-md-5 d-flex justify-content-center">
-            <div class="project-card">
-              <div class="project-visual-bg"></div>
-              <div class="project-visual-label">
-                <i class="fas fa-car me-2"></i>Parking Slot Finder
-              </div>
-              <div class="project-badge">Live</div>
-            </div>
-          </div>
-          <div class="col-12 col-md-7">
-            <div class="project-info-card">
-              <div class="project-number">01</div>
-              <h5 class="project-title">Smart Parking Slot Finder</h5>
-              <p class="project-desc">
-                A real-time smart web application designed to help users find
-                available parking slots instantly. Reduces time spent searching
-                for parking with a smooth, intuitive experience.
-              </p>
-              <p class="project-desc">
-                Built with <span class="project-tech-tag">HTML</span>
-                <span class="project-tech-tag">CSS</span>
-                <span class="project-tech-tag">Bootstrap</span> with focus on
-                responsive design and efficient slot management.
-              </p>
-              <a
-                href="https://thirunavukkarasu-m.github.io/car-slot-finder/"
-                target="_blank"
-                class="project-link-btn"
-                ><i class="fas fa-external-link-alt me-2"></i>View Project</a
-              >
-            </div>
-          </div>
-          <div class="col-12 col-md-5 d-flex justify-content-center">
-  <div class="project-card">
-    <div class="project-visual-bg"></div>
-    <div class="project-visual-label">
-      <i class="fas fa-leaf me-2"></i>Uzhavan Hub
     </div>
-    <div class="project-badge">UI Only</div>
-  </div>
-</div>
+  </footer>
 
-<div class="col-12 col-md-7">
-  <div class="project-info-card">
-    <div class="project-number">02</div>
-
-    <h5 class="project-title">Uzhavan Hub - Farmer Data UI</h5>
-
-    <p class="project-desc">
-      A simple agricultural UI dashboard designed to display farmer-related data
-      such as crops, basic weather updates, and market information in a clean and
-      user-friendly interface.
-    </p>
-
-    <p class="project-desc">
-      Built with <span class="project-tech-tag">HTML</span>
-      <span class="project-tech-tag">CSS</span>
-      <span class="project-tech-tag">Bootstrap</span> with a focus on responsive
-      layout and clean UI design for agricultural use case.
-    </p>
-
-    <a
-      href="https://uzhavan-hub.netlify.app"
-      target="_blank"
-      class="project-link-btn"
-    >
-      <i class="fas fa-external-link-alt me-2"></i>View Project
-    </a>
-  </div>
-</div>
-        </div>
-      </div>
-      
-    </section>
-
-    <!-- Education  --->
-    <section id="education" class="education-section text-white py-5">
-      <div class="container text-center">
-        <div class="section-heading">
-          <span class="section-tag">MY JOURNEY</span>
-          <h2 class="section-title">Education</h2>
-          <div class="section-line mx-auto"></div>
-        </div>
-        <div class="row g-4 justify-content-center">
-          <div class="col-12 col-md-6 col-lg-4" style="animation-delay: 0.05s">
-            <div class="edu-card">
-              <div class="edu-circle">
-                <svg viewBox="0 0 160 160">
-                  <circle cx="80" cy="80" r="60" class="edu-circle-bg"></circle>
-                  <circle
-                    cx="80"
-                    cy="80"
-                    r="60"
-                    class="edu-circle-progress p71"
-                  ></circle>
-                </svg>
-                <div class="edu-percent">71%</div>
-              </div>
-              <div class="edu-badge">SSLC</div>
-              <h5 class="edu-label mt-2">10th Standard</h5>
-              <p class="text-secondary small mb-1">
-                Govt High School — Korakkottai
-              </p>
-              <small class="edu-year">2019 - 2020</small>
+  <!-- Hire Me Modal --->
+  <div id="hire-modal-anchor" class="hire-modal-overlay" role="dialog" aria-modal="true">
+    <div class="hire-modal-dialog">
+      <a href="#home" class="hire-modal-close" aria-label="Close"><i class="fas fa-times"></i></a>
+      <div class="hire-modal-inner d-flex flex-column align-items-center justify-content-center text-center text-white">
+        <div class="hire-tag">OPEN TO WORK</div>
+        <h1 class="hire-modal-title">GET IN TOUCH</h1>
+        <p class="hire-modal-sub">
+          Available for freelance &amp; full-time opportunities 🚀
+        </p>
+        <div class="hire-modal-actions d-flex flex-wrap justify-content-center gap-4 mt-4">
+          <a href="mailto:thirumsd946@gmail.com"
+            class="hire-modal-card d-flex flex-column align-items-center text-center text-decoration-none">
+            <div class="hire-icon-wrap d-flex align-items-center justify-content-center mx-auto mb-3">
+              <i class="fas fa-envelope"></i>
             </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4" style="animation-delay: 0.1s">
-            <div class="edu-card">
-              <div class="edu-circle">
-                <svg viewBox="0 0 160 160">
-                  <circle cx="80" cy="80" r="60" class="edu-circle-bg"></circle>
-                  <circle
-                    cx="80"
-                    cy="80"
-                    r="60"
-                    class="edu-circle-progress p72"
-                  ></circle>
-                </svg>
-                <div class="edu-percent">72%</div>
-              </div>
-              <div class="edu-badge">HSC</div>
-              <h5 class="edu-label mt-2">12th Standard</h5>
-              <p class="text-secondary small mb-1">
-                Govt Hr Sec School — GunnagamPoondi
-              </p>
-              <small class="edu-year">2020 - 2022</small>
+            <h5 class="hire-card-title">Email Me</h5>
+            <p class="hire-card-sub mb-0">thirumsd946@gmail.com</p>
+          </a>
+          <a href="tel:+919790097802"
+            class="hire-modal-card d-flex flex-column align-items-center text-center text-decoration-none">
+            <div class="hire-icon-wrap d-flex align-items-center justify-content-center mx-auto mb-3">
+              <i class="fas fa-phone"></i>
             </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4" style="animation-delay: 0.15s">
-            <div class="edu-card edu-card--featured">
-              <div class="edu-circle">
-                <svg viewBox="0 0 160 160">
-                  <circle cx="80" cy="80" r="60" class="edu-circle-bg"></circle>
-                  <circle
-                    cx="80"
-                    cy="80"
-                    r="60"
-                    class="edu-circle-progress p72"
-                  ></circle>
-                </svg>
-                <div class="edu-percent">7.2</div>
-              </div>
-              <div class="edu-badge edu-badge--color-1">B.E CSE</div>
-              <h5 class="edu-label mt-2">Computer Science</h5>
-              <p class="text-secondary small mb-1">
-                St Peter's College of Engg &amp; Tech, Avadi
-              </p>
-              <small class="edu-year">2022 - 2026</small>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Certifications --->
-    <section id="certifications" class="cert-section py-5 text-white">
-      <div class="container">
-        <div class="section-heading text-center">
-          <span class="section-tag">CREDENTIALS</span>
-          <h2 class="section-title">Certifications</h2>
-          <div class="section-line mx-auto"></div>
-        </div>
-        <div class="cert-cards">
-          <div class="cert-fade cert-fade--left"></div>
-          <div class="cert-fade cert-fade--right"></div>
-          <div class="cert-track">
-            <div class="cert-card">
-              <img src="./assests/2.png" alt="Cert 1" />
-              <div class="cert-card-body">
-                <h6>Certificate 1</h6>
-                <div class="btn-group w-100">
-                  <a
-                    href="./pdf/Aicte (2).pdf"
-                    target="_blank"
-                    class="btn btn-outline-light btn-sm"
-                    >View</a
-                  ><a
-                    href="./pdf/Aicte (2).pdf"
-                    download
-                    class="btn btn-info btn-sm"
-                    >Download</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="cert-card">
-              <img src="./assests/5.png" alt="Cert 2" />
-              <div class="cert-card-body">
-                <h6>Certificate 2</h6>
-                <div class="btn-group w-100">
-                  <a
-                    href="./pdf/forage certificate.pdf"
-                    target="_blank"
-                    class="btn btn-outline-light btn-sm"
-                    >View</a
-                  ><a
-                    href="./pdf/forage certificate.pdf"
-                    download
-                    class="btn btn-info btn-sm"
-                    >Download</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="cert-card">
-              <img src="./assests/3.png" alt="Cert 3" />
-              <div class="cert-card-body">
-                <h6>Certificate 3</h6>
-                <div class="btn-group w-100">
-                  <a
-                    href="./pdf/aws.pdf"
-                    target="_blank"
-                    class="btn btn-outline-light btn-sm"
-                    >View</a
-                  ><a href="./pdf/aws.pdf" download class="btn btn-info btn-sm"
-                    >Download</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="cert-card">
-              <img src="./assests/1.png" alt="Cert 4" />
-              <div class="cert-card-body">
-                <h6>Certificate 4</h6>
-                <div class="btn-group w-100">
-                  <a
-                    href="./pdf/Recent intern online.pdf"
-                    target="_blank"
-                    class="btn btn-outline-light btn-sm"
-                    >View</a
-                  ><a
-                    href="./pdf/Recent intern online.pdf"
-                    download
-                    class="btn btn-info btn-sm"
-                    >Download</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="cert-card">
-              <img src="./assests/4.png" alt="Cert 5" />
-              <div class="cert-card-body">
-                <h6>Certificate 5</h6>
-                <div class="btn-group w-100">
-                  <a
-                    href="./pdf/data analyst.pdf"
-                    target="_blank"
-                    class="btn btn-outline-light btn-sm"
-                    >View</a
-                  ><a
-                    href="./pdf/data analyst.pdf"
-                    download
-                    class="btn btn-info btn-sm"
-                    >Download</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="cert-card">
-              <img src="./assests/6.png" alt="Cert 6" />
-              <div class="cert-card-body">
-                <h6>Certificate 6</h6>
-                <div class="btn-group w-100">
-                  <a
-                    href="./pdf/6.pdf"
-                    target="_blank"
-                    class="btn btn-outline-light btn-sm"
-                    >View</a
-                  ><a href="./pdf/6.pdf" download class="btn btn-info btn-sm"
-                    >Download</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="cert-card">
-              <img src="./assests/7.png" alt="Cert 7" />
-              <div class="cert-card-body">
-                <h6>Certificate 7</h6>
-                <div class="btn-group w-100">
-                  <a
-                    href="./pdf/7.pdf"
-                    target="_blank"
-                    class="btn btn-outline-light btn-sm"
-                    >View</a
-                  ><a href="./pdf/7.pdf" download class="btn btn-info btn-sm"
-                    >Download</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="cert-card">
-              <img src="./assests/8.png" alt="Cert 8" />
-              <div class="cert-card-body">
-                <h6>Certificate 8</h6>
-                <div class="btn-group w-100">
-                  <a
-                    href="./pdf/8.pdf"
-                    target="_blank"
-                    class="btn btn-outline-light btn-sm"
-                    >View</a
-                  ><a href="./pdf/8.pdf" download class="btn btn-info btn-sm"
-                    >Download</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="cert-card">
-              <img src="./assests/9.png" alt="Cert 9" />
-              <div class="cert-card-body">
-                <h6>Certificate 9</h6>
-                <div class="btn-group w-100">
-                  <a
-                    href="./pdf/9.pdf"
-                    target="_blank"
-                    class="btn btn-outline-light btn-sm"
-                    >View</a
-                  ><a href="./pdf/9.pdf" download class="btn btn-info btn-sm"
-                    >Download</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="cert-card">
-              <img src="./assests/10.png" alt="Cert 10" />
-              <div class="cert-card-body">
-                <h6>Certificate 10</h6>
-                <div class="btn-group w-100">
-                  <a
-                    href="./assests/10.png"
-                    target="_blank"
-                    class="btn btn-outline-light btn-sm"
-                    >View</a
-                  ><a
-                    href="./assests/10.png"
-                    download
-                    class="btn btn-info btn-sm"
-                    >Download</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="cert-card">
-              <img src="./assests/11.png" alt="Cert 11" />
-              <div class="cert-card-body">
-                <h6>Certificate 11</h6>
-                <div class="btn-group w-100">
-                  <a
-                    href="./assests/11.png"
-                    target="_blank"
-                    class="btn btn-outline-light btn-sm"
-                    >View</a
-                  ><a
-                    href="./assests/11.png"
-                    download
-                    class="btn btn-info btn-sm"
-                    >Download</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="cert-card">
-              <img src="./assests/12.png" alt="Cert 12" />
-              <div class="cert-card-body">
-                <h6>Certificate 12</h6>
-                <div class="btn-group w-100">
-                  <a
-                    href="./assests/12.png"
-                    target="_blank"
-                    class="btn btn-outline-light btn-sm"
-                    >View</a
-                  ><a
-                    href="./assests/12.png"
-                    download
-                    class="btn btn-info btn-sm"
-                    >Download</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="cert-card">
-              <img src="./assests/13.png" alt="Cert 13" />
-              <div class="cert-card-body">
-                <h6>Certificate 13</h6>
-                <div class="btn-group w-100">
-                  <a
-                    href="./assests/13.png"
-                    target="_blank"
-                    class="btn btn-outline-light btn-sm"
-                    >View</a
-                  ><a
-                    href="./assests/13.png"
-                    download
-                    class="btn btn-info btn-sm"
-                    >Download</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="cert-card">
-              <img src="./assests/14.png" alt="Cert 14" />
-              <div class="cert-card-body">
-                <h6>Certificate 14</h6>
-                <div class="btn-group w-100">
-                  <a
-                    href="./assests/14.png"
-                    target="_blank"
-                    class="btn btn-outline-light btn-sm"
-                    >View</a
-                  ><a
-                    href="./assests/14.png"
-                    download
-                    class="btn btn-info btn-sm"
-                    >Download</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="cert-card">
-              <img src="./assests/15.png" alt="Cert 15" />
-              <div class="cert-card-body">
-                <h6>Certificate 15</h6>
-                <div class="btn-group w-100">
-                  <a
-                    href="./assests/15.png"
-                    target="_blank"
-                    class="btn btn-outline-light btn-sm"
-                    >View</a
-                  ><a
-                    href="./assests/15.png"
-                    download
-                    class="btn btn-info btn-sm"
-                    >Download</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="cert-card">
-              <img src="./assests/2.png" alt="Cert 1" />
-              <div class="cert-card-body">
-                <h6>Certificate 1</h6>
-                <div class="btn-group w-100">
-                  <a
-                    href="./pdf/Aicte (2).pdf"
-                    target="_blank"
-                    class="btn btn-outline-light btn-sm"
-                    >View</a
-                  ><a
-                    href="./pdf/Aicte (2).pdf"
-                    download
-                    class="btn btn-info btn-sm"
-                    >Download</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="cert-card">
-              <img src="./assests/5.png" alt="Cert 2" />
-              <div class="cert-card-body">
-                <h6>Certificate 2</h6>
-                <div class="btn-group w-100">
-                  <a
-                    href="./pdf/forage certificate.pdf"
-                    target="_blank"
-                    class="btn btn-outline-light btn-sm"
-                    >View</a
-                  ><a
-                    href="./pdf/forage certificate.pdf"
-                    download
-                    class="btn btn-info btn-sm"
-                    >Download</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="cert-card">
-              <img src="./assests/3.png" alt="Cert 3" />
-              <div class="cert-card-body">
-                <h6>Certificate 3</h6>
-                <div class="btn-group w-100">
-                  <a
-                    href="./pdf/aws.pdf"
-                    target="_blank"
-                    class="btn btn-outline-light btn-sm"
-                    >View</a
-                  ><a href="./pdf/aws.pdf" download class="btn btn-info btn-sm"
-                    >Download</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="cert-card">
-              <img src="./assests/4.png" alt="Cert 5" />
-              <div class="cert-card-body">
-                <h6>Certificate 5</h6>
-                <div class="btn-group w-100">
-                  <a
-                    href="./pdf/data analyst.pdf"
-                    target="_blank"
-                    class="btn btn-outline-light btn-sm"
-                    >View</a
-                  ><a
-                    href="./pdf/data analyst.pdf"
-                    download
-                    class="btn btn-info btn-sm"
-                    >Download</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="cert-card">
-              <img src="./assests/6.png" alt="Cert 6" />
-              <div class="cert-card-body">
-                <h6>Certificate 6</h6>
-                <div class="btn-group w-100">
-                  <a
-                    href="./pdf/6.pdf"
-                    target="_blank"
-                    class="btn btn-outline-light btn-sm"
-                    >View</a
-                  ><a href="./pdf/6.pdf" download class="btn btn-info btn-sm"
-                    >Download</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact --->
-    <section id="contact" class="contact-section text-white">
-      <div class="container">
-        <div class="section-heading text-center">
-          <span class="section-tag">LET'S TALK</span>
-          <h2 class="section-title">Get In Touch</h2>
-          <div class="section-line mx-auto"></div>
-        </div>
-        <div
-          class="row g-3 justify-content-center"
-          style="animation-delay: 0.1s"
-        >
-          <div class="col-6 col-md-4 d-flex justify-content-center">
-            <a
-              href="https://www.linkedin.com/in/thirunavukkarasu12/"
-              target="_blank"
-              class="contact-card contact-card--linkedin"
-              ><i class="fab fa-linkedin-in"></i><span>LinkedIn</span></a
-            >
-          </div>
-          <div class="col-6 col-md-4 d-flex justify-content-center">
-            <a
-              href="https://github.com/Thirunavukkarasu-m?tab=repositories"
-              target="_blank"
-              class="contact-card contact-card--github"
-              ><i class="fab fa-github"></i><span>GitHub</span></a
-            >
-          </div>
-          <div class="col-6 col-md-4 d-flex justify-content-center">
-            <a
-              href="mailto:thirudev946@gmail.com"
-              class="contact-card contact-card--email"
-              ><i class="fas fa-envelope"></i><span>Email</span></a
-            >
-          </div>
-          <div class="col-6 col-md-4 d-flex justify-content-center">
-            <a
-              href="https://www.instagram.com/_thiru_cruise/"
-              target="_blank"
-              class="contact-card contact-card--instagram"
-              ><i class="fab fa-instagram"></i><span>Instagram</span></a
-            >
-          </div>
-          <div class="col-6 col-md-4 d-flex justify-content-center">
-            <a href="#" class="contact-card contact-card--telegram"
-              ><i class="fab fa-telegram-plane"></i><span>Telegram</span></a
-            >
-          </div>
-          <div class="col-6 col-md-4 d-flex justify-content-center">
-            <a
-              href="https://web.whatsapp.com/"
-              target="_blank"
-              class="contact-card contact-card--whatsapp"
-              ><i class="fab fa-whatsapp"></i><span>WhatsApp</span></a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer --->
-    <footer class="footer-section text-white">
-      <div class="container">
-        <div class="row gy-5 text-center text-md-start">
-          <div class="col-12 col-md-4">
-            <h4 class="footer-brand">Thiru<span>.</span></h4>
-            <p class="footer-desc">
-              Frontend Developer crafting responsive, modern web experiences
-              with clean code and pixel-perfect UI.
-            </p>
-            <p class="footer-location">
-              <i class="fas fa-map-marker-alt me-2"></i>Velachery, Chennai
-            </p>
-            <div
-              class="footer-socials mt-4 d-flex gap-2 justify-content-center justify-content-md-start"
-            >
-              <a
-                href="https://www.linkedin.com/in/thirunavukkarasu12/"
-                target="_blank"
-                class="footer-social-btn"
-                title="LinkedIn"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-              <a
-                href="https://github.com/Thirunavukkarasu-m?tab=repositories"
-                target="_blank"
-                class="footer-social-btn"
-                title="GitHub"
-                ><i class="fab fa-github"></i
-              ></a>
-              <a
-                href="https://www.instagram.com/_thiru_cruise/"
-                target="_blank"
-                class="footer-social-btn"
-                title="Instagram"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a
-                href="mailto:thirudev946@gmail.com"
-                class="footer-social-btn"
-                title="Email"
-                ><i class="fas fa-envelope"></i
-              ></a>
-            </div>
-          </div>
-          <div class="col-6 col-md-4">
-            <h6 class="footer-heading">Quick Links</h6>
-            <ul class="list-unstyled footer-nav">
-              <li>
-                <a href="#home"
-                  ><i class="fas fa-chevron-right me-1"></i>Home</a
-                >
-              </li>
-              <li>
-                <a href="#about"
-                  ><i class="fas fa-chevron-right me-1"></i>About</a
-                >
-              </li>
-              <li>
-                <a href="#skills"
-                  ><i class="fas fa-chevron-right me-1"></i>Skills</a
-                >
-              </li>
-              <li>
-                <a href="#projects"
-                  ><i class="fas fa-chevron-right me-1"></i>Projects</a
-                >
-              </li>
-              <li>
-                <a href="#certifications"
-                  ><i class="fas fa-chevron-right me-1"></i>Certifications</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-6 col-md-4">
-            <h6 class="footer-heading">Contact</h6>
-            <div class="footer-contact-list">
-              <a href="mailto:thirudev946@gmail.com" class="footer-contact-item"
-                ><i class="fas fa-envelope"></i
-                ><span>thirudev946@gmail.com</span></a
-              >
-              <a href="tel:9790097802" class="footer-contact-item"
-                ><i class="fas fa-phone"></i><span>+91 9790097802</span></a
-              >
-              <div class="footer-contact-item">
-                <i class="fas fa-map-marker-alt"></i
-                ><span>Chennai, Tamil Nadu</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="footer-divider"></div>
-        <div
-          class="footer-bottom d-flex flex-column flex-sm-row align-items-center justify-content-between gap-2"
-        >
-          <span class="footer-copy"
-            >© 2026 Thirunavukkarasu M. All rights reserved.</span
-          >
-        </div>
-      </div>
-    </footer>
-
-    <!-- Hire Me Modal --->
-    <div
-      id="hire-modal-anchor"
-      class="hire-modal-overlay"
-      role="dialog"
-      aria-modal="true"
-    >
-      <div class="hire-modal-dialog">
-        <a href="#home" class="hire-modal-close" aria-label="Close"
-          ><i class="fas fa-times"></i
-        ></a>
-        <div
-          class="hire-modal-inner d-flex flex-column align-items-center justify-content-center text-center text-white"
-        >
-          <div class="hire-tag">OPEN TO WORK</div>
-          <h1 class="hire-modal-title">GET IN TOUCH</h1>
-          <p class="hire-modal-sub">
-            Available for freelance &amp; full-time opportunities 🚀
-          </p>
-          <div
-            class="hire-modal-actions d-flex flex-wrap justify-content-center gap-4 mt-4"
-          >
-            <a
-              href="mailto:thirumsd946@gmail.com"
-              class="hire-modal-card d-flex flex-column align-items-center text-center text-decoration-none"
-            >
-              <div
-                class="hire-icon-wrap d-flex align-items-center justify-content-center mx-auto mb-3"
-              >
-                <i class="fas fa-envelope"></i>
-              </div>
-              <h5 class="hire-card-title">Email Me</h5>
-              <p class="hire-card-sub mb-0">thirumsd946@gmail.com</p>
-            </a>
-            <a
-              href="tel:+919790097802"
-              class="hire-modal-card d-flex flex-column align-items-center text-center text-decoration-none"
-            >
-              <div
-                class="hire-icon-wrap d-flex align-items-center justify-content-center mx-auto mb-3"
-              >
-                <i class="fas fa-phone"></i>
-              </div>
-              <h5 class="hire-card-title">Call Me</h5>
-              <p class="hire-card-sub mb-0">+91 9790097802</p>
-            </a>
-          </div>
+            <h5 class="hire-card-title">Call Me</h5>
+            <p class="hire-card-sub mb-0">+91 9790097802</p>
+          </a>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Back To Top -->
-    <a href="#home" class="back-to-top" title="Back to top"
-      ><i class="fas fa-arrow-up"></i
-    ></a>
+  <!-- Back To Top -->
+  <a href="#home" class="back-to-top" title="Back to top"><i class="fas fa-arrow-up"></i></a>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</body>
+
 </html>

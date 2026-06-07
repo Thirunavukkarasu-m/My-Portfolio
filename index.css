@@ -153,6 +153,33 @@ img {
     transform 0.3s ease;
 }
 
+.theme-btn{
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:50%;
+    background:rgba(255,255,255,0.08);
+    color:#fff;
+    cursor:pointer;
+    transition:0.3s;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.theme-btn:hover{
+    background:var(--color-1);
+    color:#000;
+    transform:rotate(180deg);
+}
+html{
+    transition: filter 0.8s cubic-bezier(0.4,0,0.2,1);
+}
+
+img{
+    transition: filter 0.8s cubic-bezier(0.4,0,0.2,1);
+}
+
 /* home */
 .home1-section {
   min-height: 100vh;
@@ -1612,6 +1639,7 @@ img {
 
 /*  Mobile */
 @media only screen and (min-width: 300px) and (max-width: 600px) {
+  
   .home1-section {
     padding-top: 90px;
     padding-bottom: 50px;
@@ -1793,6 +1821,7 @@ img {
 
 /*  TABLET */
 @media only screen and (min-width: 600px) and (max-width: 900px) {
+  
   .home1-section {
     padding-top: 90px;
   }
@@ -1884,6 +1913,10 @@ img {
 
 /* Laptop */
 @media only screen and (min-width: 900px) and (max-width: 1200px) {
+ 
+ .theme-btn{
+  margin: -10px;
+ }
   .home-profile-img {
     width: 250px;
     height: 250px;
